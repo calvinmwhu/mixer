@@ -23,8 +23,8 @@ export class ProjectConfig extends SeedConfig {
 
     this.APP_ASSETS = [
       ...this.APP_ASSETS,
-      {src: `${this.APP_SRC}/mixer/mixer.min.css}`, inject: true, vendor: false},
-      {src: `${this.APP_SRC}/mixer/mixer.min.js}`, inject: true, vendor: false},
+      {src: `${this.APP_SRC}/mixer/mixer.min.css`, inject: true, vendor: false},
+      {src: `${this.APP_SRC}/mixer/mixer.min.js`, inject: true, vendor: false},
     ];
 
 
