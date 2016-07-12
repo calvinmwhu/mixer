@@ -17,14 +17,15 @@ export class ProjectConfig extends SeedConfig {
     // Add third-party libraries to be injected/bundled.
     this.NPM_DEPENDENCIES = [
       ...this.NPM_DEPENDENCIES,
+      {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
       // {src: "", inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
     ];
 
     this.APP_ASSETS = [
       ...this.APP_ASSETS,
-      {src: `${this.APP_SRC}/mixer/mixer.min.css}`, inject: true, vendor: false},
-      {src: `${this.APP_SRC}/mixer/mixer.min.js}`, inject: true, vendor: false},
+      {src: `${this.APP_SRC}/mixer/mixer.min.css`, inject: true, vendor: true},
+      {src: `${this.APP_SRC}/mixer/mixer.min.js`, inject: true, vendor: true},
     ];
 
 
